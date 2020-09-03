@@ -32,11 +32,5 @@ module.exports = {
         ecmaVersion: 2020,
       },
     },
-    {
-      files: ["*.ts"],
-      rules: {
-        "import/prefer-default-export": 0,
-      }
-    }
   ],
 };

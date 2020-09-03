@@ -2,7 +2,7 @@
 import { createApp } from 'vue';
 
 // Libraries
-import { router } from '@/config';
+import router from './config/routerConfig';
 
 // Application
 import App from './App.vue';
