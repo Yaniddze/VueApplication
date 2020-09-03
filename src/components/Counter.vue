@@ -13,24 +13,24 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+  import { defineComponent } from 'vue';
 
-export default defineComponent({
-  name: 'Counter',
-  data() {
-    return {
-      counter: 1,
-    };
-  },
-  methods: {
-    increment() {
-      this.counter += 1;
+  export default defineComponent({
+    name: 'Counter',
+    data() {
+      return {
+        counter: 1,
+      };
     },
-    decrement() {
-      this.counter -= 1;
+    methods: {
+      increment() {
+        this.counter += 1;
+      },
+      decrement() {
+        this.counter -= 1;
+      },
     },
-  },
-});
+  });
 </script>
 
 <style scoped>
