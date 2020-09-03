@@ -1,4 +1,26 @@
 import { createApp } from 'vue';
+import { createRouter, RouteRecordRaw, createWebHistory } from 'vue-router';
+import Counter from './components/Counter.vue';
 import App from './App.vue';
 
-createApp(App).mount('#app');
+const routes: RouteRecordRaw[] = [
+  {
+    path: '/foo',
+    component: Counter,
+    name: 'foo,',
+  },
+  {
+    path: '/bar',
+    component: App,
+    name: 'bar',
+  },
+];
+
+const router = createRouter({
+  history: createWebHistory(process.env.BASE_URL),
+  routes,
+});
+
+createApp(App)
+  .use(router)
+  .mount('#app');

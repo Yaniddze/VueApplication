@@ -4,6 +4,9 @@
       Hello!
     </div>
     <Counter/>
+    <router-link to="/foo">Foo</router-link>|
+    <router-link to="/bar">Bar</router-link>
+    <router-view />
   </div>
 </template>
 
