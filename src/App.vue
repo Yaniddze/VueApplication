@@ -1,10 +1,9 @@
 <template>
   <div>
-    <div class="newApp">
+    <div class="header">
       Hello!
     </div>
-    <Counter/>
-    <router-link to="/foo">Foo</router-link>|
+    <router-link to="/foo">Foo</router-link> |
     <router-link to="/bar">Bar</router-link>
     <router-view />
   </div>
@@ -12,23 +11,20 @@
 
 <script lang="ts">
   import { defineComponent } from 'vue';
-  import Counter from './components/Counter.vue';
 
   export default defineComponent({
     name: 'App',
-    components: {
-      Counter,
-    },
   });
 </script>
 
 <style scoped lang="scss">
-  .newApp {
+  .header {
     background: red;
     border: 1px solid black;
     border-radius: 10px;
     color: white;
     padding: 10px;
+    margin: 10px;
 
     &:hover {
       cursor: pointer;
