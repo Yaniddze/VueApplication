@@ -1,8 +1,6 @@
 <template>
   <div>
-    <div class="header">
-      Hello!
-    </div>
+    <Header />
     <router-link to="/foo">Foo</router-link> |
     <router-link to="/bar">Bar</router-link>
     <router-view />
@@ -11,23 +9,12 @@
 
 <script lang="ts">
   import { defineComponent } from 'vue';
+  import Header from '@/components/Header.vue';
 
   export default defineComponent({
     name: 'App',
+    components: {
+      Header,
+    },
   });
 </script>
-
-<style scoped lang="scss">
-  .header {
-    background: red;
-    border: 1px solid black;
-    border-radius: 10px;
-    color: white;
-    padding: 10px;
-    margin: 10px;
-
-    &:hover {
-      cursor: pointer;
-    }
-  }
-</style>
