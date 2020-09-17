@@ -16,5 +16,7 @@
   .header {
     padding: 10px;
     border: none;
+    background: #0d2b11;
+    color: white;
   }
 </style>
