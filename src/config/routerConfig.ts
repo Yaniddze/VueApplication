@@ -13,7 +13,7 @@ const routes: RouteRecordRaw[] = [
     component: ButtonsPage,
     name: 'bar',
     props: {
-      myProp: 123,
+      myProp: 'Test value',
     },
   },
 ];
