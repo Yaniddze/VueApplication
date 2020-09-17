@@ -24,6 +24,7 @@ module.exports = {
     {
       files: ["*.vue"],
       rules: {
+        'no-trailing-spaces': 'off',
         'vue/script-indent': ["error", 2, { "baseIndent": 1 }],
         indent: "off",
       },
